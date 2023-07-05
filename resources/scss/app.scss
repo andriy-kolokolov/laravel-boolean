@@ -1,0 +1,79 @@
+/*resources/scss/app.scss*/
+@use "partials/todos-index";
+@use "partials/header";
+@import "~bootstrap/scss/bootstrap";
+
+// My Style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    //background-color: grey;
+    //color: white;
+    height: 100vh;
+}
+
+.show {
+    width: 60%;
+    margin-top: 3em;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .list-group {
+            border-radius: 20px;
+            width: 500px;
+            cursor: default;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .image {
+        width: 100%;
+        img {
+            width: 500px;
+            border-radius: 5px;
+            aspect-ratio: 1 / 1.5;
+            box-shadow: 0px 0px 30px black;
+        }
+    }
+}
+
+.about {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+
+    .card-pic {
+        img {
+            border-radius: 20%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.table-rounded {
+    border-radius: 5px;
+    overflow: hidden;
+}

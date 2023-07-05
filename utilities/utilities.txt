@@ -1,0 +1,24 @@
+php artisan ...
+
+// creare la migrazione
+make:migrate <esempio: 'create_comics_table'>
+
+// creare il model
+make:model <nome plulare esempio: 'Comics'>
+
+// creare il seeder
+make:seeder <esempio: 'ComicsTableSeeder'>
+
+// portare i dati nel database
+db:seed --class=<esempio: 'ComicsTableSeeder'>
+
+// creare il controller
+make:controller <esempio: 'Guest/PageController'>
+
+// modificare vendor pages
+php artisan vendor:publish
+< poi scegliere il numero corrispondente alla cartella da modificare >
+
+
+// INSTALL DEBUG PAGE
+composer require barryvdh/laravel-debugbar --dev
